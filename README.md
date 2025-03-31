@@ -9,7 +9,9 @@ En este ejemplo se puede observar el funcionamiento de diferentes balanceadores 
 - [MongoDB](https://www.mongodb.com/try/download/community)
 
 ## Prepraración de Nginx
-> [!NOTE] Estos pasos estan realizados dentro de la carpeta `nginx` dentro del proyecto.
+> [!NOTE]
+> Estos pasos estan realizados dentro de la carpeta `nginx` dentro del proyecto.
+
 1. Descargar Nginx y descomprimir en una carpeta de su preferencia.
 2. Incluir en conf/nginx.conf la siguiente línea:
 ```nginx
