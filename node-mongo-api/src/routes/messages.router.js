@@ -7,6 +7,8 @@ class MessageRouter {
         this.router = express.Router();
         this.router.post('/message', InstanceLogsMIddleware.logInstance, Messages.addMessage);
         this.router.get('/messages', InstanceLogsMIddleware.logInstance, Messages.getMessages);
+        this.router.get('/messages/:port', InstanceLogsMIddleware.logInstance, Messages.getMessagesFromPort);
+
     }
 
 }
