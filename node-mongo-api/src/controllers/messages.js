@@ -26,6 +26,16 @@ class Messages {
         }
     }
 
+    async getMessagesFromPort(req, res) {
+        try {
+            const port = req.params.port;
+            const messages = await MessageModel.find({ receivedBy: port });
+            res.status(200).json(messages);
+        } catch (error) {
+            res.status(500).json({ error: 'Failed to fetch messages' });
+        }
+    }
+
 
 }
 export default new Messages();
