@@ -10,7 +10,7 @@ En este ejemplo se puede observar el funcionamiento de diferentes balanceadores 
 
 ## Prepraración de Nginx
 > [!NOTE]
-> Estos pasos estan realizados dentro de la carpeta `nginx` dentro del proyecto.
+> Estos pasos estan realizados dentro de la carpeta `nginx` dentro del proyecto, se debe ejecutar de 0 una version de nginx para que se configure correctamente en su version portable descargada.
 
 1. Descargar Nginx y descomprimir en una carpeta de su preferencia.
 2. Incluir en conf/nginx.conf la siguiente línea:
