@@ -19,7 +19,7 @@ class Messages {
 
     async getMessages(req, res) {
         try {
-            const messages = await Message.find();
+            const messages = await MessageModel.find();
             res.status(200).json(messages);
         } catch (error) {
             res.status(500).json({ error: 'Failed to fetch messages' });
