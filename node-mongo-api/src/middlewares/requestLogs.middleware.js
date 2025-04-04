@@ -4,7 +4,7 @@ class InstanceLogsMIddleware {
     async logInstance(req, res, next) {
         try {
             //const { method, url } = req;
-            const addLog = {instance: "Solicitud Recibida por: " + process.env.PORT};
+            const addLog = {instance: "Solicitud Recibida por: " + process.env.PORT, request: req.method, url: req.url};
             const logAdded = await new LogModel(addLog);
             await logAdded.save();
             next();
